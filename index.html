@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M I SANJAY</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   
+</head>
+<body>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#">Portfo<span>lio.</span></a></div>
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#servicess">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    <!--home section start-->
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <div class="text-1">Hello, my name is</div>
+                <div class="text-2">Sanjay</div>
+                <div class="text-3">And I'm a <span id="dynamic-role"></span></div>
+                <a href="#contact">Hire me</a>
+            </div>            
+        </div>
+    </section>
+  <!--about section start-->
+  <section class="about" id="about">
+    <div class="max-width">
+        <h2 class="title">About me</h2>
+        <div class="about-content">
+            <div class="column left">
+              <img src="IMG_8673.JPG" alt="">  
+            </div>
+            <div class="column right">
+                <div class="text">I'm Sanjay and I'm a <span>Software Tester</span></div>
+                <p>A recent college graduate seeking entry-level opportunities in software testing,
+                     aiming to apply my knowledge and skills to help companies enhance the quality of their software.
+                      I am highly motivated, detail-oriented, and passionate about identifying issues and improving the overall 
+                      functionality of software applications. My strong problem-solving abilities and communication 
+                      skills enable me to work effectively in cross-functional teams, ensuring that the product meets 
+                      high standards of quality and reliability.</p>
+                <a target="_blank" href="M I SANJAY.pdf">Download CV</a>
+            </div>
+            
+        </div>
+    </div>
+</section>   
+ <!--Education section start-->
+ <section class="services" id="services">
+    <div class="max-width">
+        <h2 class="title">Education & Certification</h2>
+        <div class="tabs">
+            <button class="tab-button" id="education-tab" onclick="showContent('education')">Education</button>
+            <button class="tab-button" id="certification-tab" onclick="showContent('certification')">Certification</button>
+        </div>
+
+        <div class="serv-content" style=" justify-content: center; ">
+            <!-- Education Content -->
+            <div id="education" class="tab-content">
+                <div class="card" >
+                    <div class="box">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div class="text">Bachelor of Engineering</div>
+                        <p>P D A College of Engineering</p>
+                        <p><strong>Year of Passing (YOP):</strong> 2022</p>
+                        <p><strong>CGPA:</strong> 8.5</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certification Content -->
+            <div id="certification" class="tab-content" style="display: none;">
+                <div class="card" style="margin-bottom: 20px;">
+                    <div class="box">
+                        <i class="fas fa-certificate"></i>
+                        <div class="text">Software Testing Training</div>
+                        <p>Completed a comprehensive training program in Software Testing at Kodnest, Bangalore. The course included both manual and automation testing techniques, with a focus on industry-standard practices for ensuring quality and reliability in software development.</p>
+                        <p><strong>Year:</strong> 2023</p>
+                        <!-- Added Gap Between Year and View Certificate -->
+                        <p style="margin-bottom: 15px;"></p> <!-- Adds space -->
+                        <p>
+                            <a href="path/to/certificate.pdf" target="_blank" 
+                               style="font-size: 16px; color: #007BFF; font-weight: bold; text-decoration: none; border: 2px solid #007BFF; padding: 10px 20px; border-radius: 5px; transition: all 0.3s ease-in-out;"
+                               onmouseover="this.style.backgroundColor='#007BFF'; this.style.color='white';"
+                               onmouseout="this.style.backgroundColor='transparent'; this.style.color='#007BFF';">
+                               View Certificate
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                
+               
+
+                <div class="card"  style="margin-bottom: 20px;">
+                    <div class="box">
+                        <i class="fas fa-certificate"></i>
+                        <div class="text">Selenium WebDriver with Java</div>
+                        <p>Completed the "Selenium WebDriver with Java - Basics to Advanced + Frameworks" course from Udemy. The course covered essential topics such as Selenium WebDriver, Java programming, and test automation frameworks to build scalable and efficient test scripts.</p>
+                        <p><strong>Year:</strong> 2025</p>
+                        <p style="margin-bottom: 15px;"></p> <!-- Adds space -->
+                        <p>
+                            <a href=" https://www.udemy.com/certificate/UC-250315b1-1255-42b5-a19a-2ba765588332/" target="_blank" 
+                               style="font-size: 16px; color: #007BFF; font-weight: bold; text-decoration: none; border: 2px solid #007BFF; padding: 10px 20px; border-radius: 5px; transition: all 0.3s ease-in-out;"
+                               onmouseover="this.style.backgroundColor='#007BFF'; this.style.color='white';"
+                               onmouseout="this.style.backgroundColor='transparent'; this.style.color='#007BFF';">
+                               View Certificate
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="skills" id="skills">
+    <div class="max-width">
+        <h2 class="title">My Skills</h2>
+
+       
+
+        <!-- Skills Tab Content (Always Visible) -->
+        <div class="skills-content" style=" justify-content: center; ">
+            <div class="column right">
+                <!-- Java Skill Bar -->
+                <div class="bars">
+                    <div class="info">
+                        <span>JAVA</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="line java"></div>
+                </div>
+
+                <!-- Manual Testing Skill Bar -->
+                <div class="bars">
+                    <div class="info">
+                        <span>MANUAL TESTING</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="line mt"></div>
+                </div>
+
+                <!-- Automation Testing Skill Bar -->
+                <div class="bars">
+                    <div class="info">
+                        <span>AUTOMATION TESTING</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="line at"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- Description Button -->
+     <div class="tab-container" style="text-align: center; margin-bottom: 30px;">
+        <button class="tab-button active" onclick="showDescription()">Description</button>
+    </div>
+
+    <!-- Popup Modal for Description -->
+    <div id="descriptionPopup" class="popup" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #ffffff; border: 2px solid #007BFF; border-radius: 12px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25); z-index: 9999; max-width: 600px; width: 80%; max-height: 90vh; overflow-y: auto; padding: 0;">
+        <div class="popup-content" style="padding: 20px; font-family: Arial, sans-serif; color: #333;">
+            <span class="popup-close" onclick="closePopup()" style="cursor: pointer; font-size: 20px; float: right; color: #007BFF;">&times;</span>
+            
+            <h3 style="color: #007BFF; border-bottom: 1px solid #ddd; padding-bottom: 5px;">Technologies & Tools</h3>
+            <ul style="margin-left: 20px; margin-bottom: 20px;">
+                <li>Java (Core & Advanced)</li>
+                <li>Selenium WebDriver with Java</li>
+                <li>JUnit and TestNG for Test Automation</li>
+                <li>API Testing (Postman, REST Assured)</li>
+                <li>Version Control (Git, GitHub)</li>
+                <li>Continuous Integration/Continuous Deployment (Jenkins)</li>
+                <li>SQL for Database Testing</li>
+                <li>Agile & Scrum Methodologies</li>
+                <li>Defect Tracking Tools (Jira, Bugzilla)</li>
+            </ul>
+            
+            <h3 style="color: #007BFF; border-bottom: 1px solid #ddd; padding-bottom: 5px;">Manual Testing Skills</h3>
+            <ul style="margin-left: 20px; margin-bottom: 20px;">
+                <li>Knowledge of Software Development Life Cycle (SDLC)</li>
+                <li>Good understanding of Software Test Life Cycle (STLC)</li>
+                <li>Familiarity with Levels of Testing: Unit, Integration, System, and User Acceptance Testing (UAT)</li>
+                <li>Understanding of Types of Testing: Functional, Performance, Security, and Usability Testing</li>
+                <li>Awareness of Functional Testing and Non-Functional Testing</li>
+                <li>Knowledge in Writing and Reviewing Test Cases</li>
+                <li>Proficient in Writing Test Documents: Test Plans, Test Cases</li>
+            </ul>
+    
+            <h3 style="color: #007BFF; border-bottom: 1px solid #ddd; padding-bottom: 5px;">Automation Testing Skills</h3>
+            <ul style="margin-left: 20px; margin-bottom: 10px;">
+                <li>Knowledge on Creating Selenium Test Cases using Element Locators and WebDriver methods</li>
+                <li>Knowledge on Java programming to enhance Test Cases</li>
+                <li>Knowledge on TestNG Testing Framework</li>
+                <li>Knowledge of Page Object Model (POM)</li>
+                <li>Proficient in designing and implementing automation frameworks (Data-Driven, Keyword-Driven, Hybrid)</li>
+                <li>Experience with Selenium, TestNG, and Maven for framework development</li>
+            </ul>
+        </div>
+    </div>
+    
+    
+    
+</section>
+<!-- Skills Section End -->
+<!--Project section start-->
+<section class="services" id="servicess">
+    <div class="max-width">
+        <h2 class="title">Project</h2>
+        <div class="serv-content">
+
+
+           <div class="card">
+            <div class="box">
+                <i class="fas fa-file-code"></i>
+                <div class="text">Manual Testing Project</div>
+                    <p>• Performed manual testing on an OpenCart online shopping web application.
+                         First, I wrote  test case scenarios and test cases to cover various functionalities, 
+                         such as user registration, product search, adding items to the cart, and the checkout process. Then, I executed the test cases , verifying that each component worked as expected,
+                         and reported any defects found during the testing process. </p>
+                      
+            </div>
+           </div>
+
+           <div class="card" style="margin-top: 5%;">
+            <div class="box">
+                <i class="fas fa-file-code"></i>
+                <div class="text">Automation Testing Project</div>
+                    <p>• Performed automation testing on the Luma shopping web application using the Selenium framework and TestNG. The testing process focused on crucial features such as user registration,
+                         login functionality, adding products to the cart, and the checkout process.
+                          By automating these tests, I ensured the application's functionality, usability, and stability. </p>
+                       
+            </div>
+           </div>
+
+        </div>
+    </div>
+</section>
+<!--Contact section start-->
+<section class="contact" id="contact">
+    <div class="max-width">
+        <h2 class="title">Contact me</h2>
+        <div class="contact-content">
+            <div class="column left">
+                <div class="text">Get in touch</div>
+                <p></p>
+                <div class="icons">
+                    <div class="row">
+                        <i class="fas fa-user"></i>
+                        <div class="info">
+                            <div class="head">Name</div>
+                            <div class="sub-title">Sanjay</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <i class="fas fa-phone"></i>
+                        <div class="info">
+                            <div class="head">Phone-Number</div>
+                            <div class="sub-title">8310095004</div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <i class="fas fa-envelope"></i>
+                        <div class="info">
+                            <div class="head">Email</div>
+                            <div class="sub-title">sanjay.naik482@gmail.com</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column right">
+                <div class="text">Message me</div>
+                <form id="submit-form" action="" >
+                    <div class="fields">
+                       <div class="field name">
+                        <input type="text" placeholder="Name" required name="name">
+                       </div> 
+                       <div class="field email">
+                        <input type="email" placeholder="Email" required name="email">
+                       </div>
+                    </div>
+                    <div class="field">
+                        <input type="text" placeholder="Subject" required name="subject">
+                       </div>
+                       <div class="field textarea">
+                        <textarea cols="30" rows="10" placeholder="write a message.." required name="message"></textarea>
+                       </div>
+                       <div class="button">
+                        <button type="submit">Send message</button>
+                       </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!--footer section starts-->
+<footer>
+   <span>Created By <a href="#"> Sanjay </a> |&nbsp;<span class="far fa-copyright"> 2025 all rights reserved.</span> 
+</footer>
+  <script src="script.js"></script>
+  <script>
+    $("#submit-form").submit((e)=>{
+        e.preventDefault()
+        $.ajax({
+            url:"https://script.google.com/macros/s/AKfycbzOjOO7KK8cnn67tpVt-8ytM9Dr1JYfJDA3retWJnXYszn2F_tKijcTV8GUxzlXb1UESw/exec",
+            data:$("#submit-form").serialize(),
+            method:"post",
+            success:function (response){
+                alert("Form submitted successfully")
+                window.location.reload()
+                //window.location.href="https://google.com"
+            },
+            error:function (err){
+                alert("Something Error")
+
+            }
+        })
+    })
+</script>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>  
+<script>
+    var typed = new Typed("#dynamic-role", {
+        strings: ["Quality Analyst", "Manual Tester", "Automation Tester"],
+        typeSpeed: 100,       // Speed for typing each character
+        backSpeed: 100,       // Speed for deleting each character
+        backDelay: 1000,      // Delay before starting to delete
+        startDelay: 500,      // Delay before typing starts
+        loop: true,           // Loop through the strings indefinitely
+        showCursor: true      // Enable blinking cursor
+    });
+</script>
+<script>
+    function showContent(tab) {
+        // Hide all content
+        const contents = document.querySelectorAll('.tab-content');
+        contents.forEach(content => content.style.display = 'none');
+        
+        // Remove active class from all tabs
+        const buttons = document.querySelectorAll('.tab-button');
+        buttons.forEach(button => button.classList.remove('active'));
+
+        // Show the content for the selected tab
+        document.getElementById(tab).style.display = 'block';
+
+        // Add active class to the clicked tab
+        document.getElementById(tab + '-tab').classList.add('active');
+    }
+
+    // Set initial tab to be active
+    showContent('education');
+</script>
+<script>
+function showDescription() {
+    document.getElementById('descriptionPopup').style.display = 'block'; // Show the popup
+}
+
+function closePopup() {
+    document.getElementById('descriptionPopup').style.display = 'none'; // Hide the popup
+}
+</script>
+
+</body>
+</html>
